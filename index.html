@@ -43,8 +43,8 @@ h1{margin:0;font-size:clamp(30px,8vw,44px);letter-spacing:-.02em;line-height:1.1
 .panel label{display:grid;gap:4px;font-size:13px;color:var(--mute)}
 .acts{display:flex;gap:8px}
 .panel button.pri{background:var(--red);border-color:var(--red);color:#fff;font-weight:600}
-.tabs{display:flex;gap:6px;margin-bottom:12px;border-bottom:2px solid var(--line)}
-.tabs button{border:0;background:none;color:var(--mute);padding:8px 14px;font-weight:700;font-size:15px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+.tabs{display:flex;gap:6px;margin-bottom:12px;box-shadow:inset 0 -2px 0 var(--line)}
+.tabs button{border:0;background:none;color:var(--mute);padding:8px 14px;font-weight:700;font-size:15px;cursor:pointer;border-bottom:3px solid transparent}
 .tabs button.on{color:var(--ink);border-bottom-color:var(--red)}
 .row[data-row]{cursor:pointer}.was{font-size:11px;color:var(--mute);font-weight:400;max-width:120px;margin-left:auto;line-height:1.25}
 .ov{position:fixed;inset:0;background:rgba(5,10,25,.6);display:flex;align-items:center;justify-content:center;z-index:9;padding:16px}
@@ -73,7 +73,7 @@ h1{margin:0;font-size:clamp(30px,8vw,44px);letter-spacing:-.02em;line-height:1.1
 .hd{display:flex;align-items:center;gap:14px}.brand{width:60px;height:60px;flex:none;object-fit:contain}
 #hlSel{border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);padding:5px 8px;font-size:14px}
 .hc{display:flex;align-items:center;gap:10px;margin-bottom:8px}
-.tabs{overflow-x:auto}.tabs button{white-space:nowrap;padding:8px 12px}
+.tabs{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}.tabs::-webkit-scrollbar{display:none}.tabs button{white-space:nowrap;padding:8px 12px}
 .cf{margin:20px 0 6px;font-size:18px;font-weight:800;border-bottom:3px solid var(--blue);padding-bottom:4px}
 .ps,.ar select{border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);padding:5px 8px;font-size:14px;max-width:100%}
 .ar{display:grid;grid-template-columns:28px 44px 1fr;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:6px}
